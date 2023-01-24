@@ -1,13 +1,39 @@
+/* Partie css rajouter par geoffrey */
+a.style_lien{
+  color: black;
+  letter-spacing: 0.1em;
+}
+
+a.style_lien:hover {
+color:rgba(121, 9, 3, 0.75);
+  font-size: 18px;
+  transition-duration: 0.4s;
+  font-style: italic;
+}
+
+a.style_lien:focus {
+  color: #dd2809;
+}
+
+#img-contact{
+  width: 28em;
+}
+
+iframe{
+  margin: 5%;
+  border-radius: 4em;
+  border:3px outset  rgba(123,29,24,0.75);
+}
+
+/* Fin de la partie css geoffrey */
 #footer1 div.container{
 	display: flex;
 }
 
-/* test*/
-
 #footer1{
 	display: flex;
 	width: 100%;
-	background-color: rgba(123,29,24,0.65);
+	border-color: rgba(123,29,24,0.65);
 	margin-bottom: 0.1%;
 	height: 3%;
 }
@@ -77,6 +103,45 @@
 	margin-top: 1%;
   background-color: rgba(253,199,21,0.51);
 	padding-top: 0.5vh;
+}
+#imageclub{
+  position: relative; 
+  height: 700px;
+  margin-left: 5vw; 
+  border-radius: 4px;
+}
+#img_footer{
+  width: 100px;
+  text-align: center;
+}
+#div_present{
+  background-color: rgba(123,29,24,0.75);
+  padding-top: 5vh; 
+  padding-bottom: 5vh; 
+  display: inline-flex; 
+  width: 100%;
+}
+
+
+
+span.lien{
+  color: #cecccc;
+  letter-spacing: 0.1em;
+}
+
+span.lien:hover{
+  color:rgba(121, 9, 3, 0.75);
+  font-size: 18px;
+  transition-duration: 0.4s;
+  font-style: italic;
+}
+
+#div_present2{
+  margin-left: 6vw; 
+  background-color: white; 
+  border-radius: 12px; 
+  margin-right: 5vw; padding-bottom: -2vh;
+   display: grid;
 }
 
 #results{
@@ -836,8 +901,10 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  margin : auto;
+
 }
 
 .col {
@@ -4541,7 +4608,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: rgba(253,199,21,0.51);
+  background-color:rgba(248,174,21,0.55);
   transition : all 0.5s ease-out;
 }
 
@@ -4807,7 +4874,7 @@ input[type="button"].btn-block {
 }
 
 .navbar:hover{
-  background-color: rgba(248,174,21,0.55);
+  background-color:rgba(123,29,24,0.75) ;
 	transition: 0.5s;
 }
 

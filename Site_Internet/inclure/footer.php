@@ -1,17 +1,16 @@
 <footer id="footer1">
-		<img src="./images/logo.png" style="width: 100px; height: 100px;">
-		<div class="container">
-			<div class="row">
-				<ul class="navbar-nav mr-auto">
-          			<li class="nav-item"> <a class="nav-link" href="mentionslegales"> Mentions légales </a></li>
-          			<li class="nav-item"><a class="nav-link" href="conditionsgénérales"> Conditions générales </a></li>
-					<li class="nav-item"><p> | </p></li>
-					<li class="nav-item"><a class="nav-link" href="https://www.facebook.com/thorefootballclub/" target="_blank"><img src="./images/facebook-footer.svg" style="width:30px;"></a></li>
-					<li class="nav-item"><a class="nav-link" href="https://www.instagram.com/thorefc81/" target="_blank"><img src="./images/instagram-sketched.png" style="width:30px;"></a></li>
-        		</ul>
-			</div>
-		</div>
-	</footer>
+        <div class="container">
+            <div class="row">
+                <ul class="navbar-nav mr-auto">
+                      <li class="nav-item"> <a class="nav-link" href="mentionslegales"> Mentions légales </a></li>
+                      <li class="nav-item"><a class="nav-link" href="conditionsgénérales"> Conditions générales </a></li>
+                    <li class="nav-item"><p> | </p></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:thore.fc81@gmail.com" target="_blank"><span class="lien" >Email</span><img id="img_footer" src="images/logo.png"> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.messenger.com/" target="_blank"><span class="lien" >Messenger</span><img id="img_footer" src="images/logo_messenger.png"  ></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <footer class="text-center" id="footer2">
       <div class="container">
         <div class="row">

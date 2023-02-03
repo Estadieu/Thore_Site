@@ -1,4 +1,76 @@
-/* Partie css rajouter par geoffrey */
+#d1{
+  margin-top: -8%;
+}
+
+#d2{
+  box-shadow: 0px 0px 3px 3px rgba(121, 9, 3, 0.75);
+  width: 500px;
+  margin : auto;
+  margin-top: 18%;
+}
+
+
+
+
+.image1 a img {
+  width: 7%;
+  transform: rotateX(30deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+  box-shadow: -30px 50px 15px 5px rgba(0,0,0,0.4);
+  transition: all .4s;
+  transform-style: preserve-3d;
+  margin-left: 5%;
+  margin-top : -5%
+  
+}
+#instafeed-container:hover a img {
+  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 5px 5px rgba(121, 9, 3, 0.75);
+  margin: 2%;
+  width: 20%;
+}
+
+#instafeed-container{
+  margin : auto;
+}
+
+button {
+  display: inline-block;
+  background-color: rgba(121, 9, 3, 0.75);
+  color: #eeeeee;
+  border-color:  3px double rgba(248,174,21,0.55);
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: rgba(248,174,21,0.40);
+}
+button:hover span {
+  padding-right: 25px;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 a.style_lien{
   color: black;
   letter-spacing: 0.1em;
@@ -19,13 +91,11 @@ a.style_lien:focus {
   width: 28em;
 }
 
-iframe{
-  margin: 5%;
-  border-radius: 4em;
-  border:3px outset  rgba(123,29,24,0.75);
-}
 
-/* Fin de la partie css geoffrey */
+
+
+
+
 #footer1 div.container{
 	display: flex;
 }
@@ -35,7 +105,7 @@ iframe{
 	width: 100%;
 	border-color: rgba(123,29,24,0.65);
 	margin-bottom: 0.1%;
-	height: 3%;
+	
 }
 
 #cta{
@@ -71,6 +141,7 @@ iframe{
 	padding-right: 1.5vw;
 }
 
+
 #footer1 img{
 	margin: auto 0 auto 3%;
 }
@@ -80,9 +151,19 @@ iframe{
 	flex-direction: row;
 	width: 100%;
 	height: auto;
-	margin-left: -15%;
-	padding: 6% 0px;
+	margin-left: 10%;
+	padding: 30% ;
 }
+
+#footer1 ul .nav-item p{
+  color: #cecccc;
+  font-family: "bebas-neue";
+  font-size: 36px;
+  height: auto;
+  font-weight: 800px;
+  margin-left: 2.7em;
+}
+
 
 #footer1 .navbar-nav a{
 	color: #cecccc;
@@ -104,22 +185,140 @@ iframe{
   background-color: rgba(253,199,21,0.51);
 	padding-top: 0.5vh;
 }
-#imageclub{
-  position: relative; 
-  height: 700px;
-  margin-left: 5vw; 
-  border-radius: 4px;
+#geoloc
+{
+  width: 100vh;
+  height :"400px"; 
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 1vh;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border : 3px double rgba(248,174,21,0.55);
+  border-radius: 5px;
 }
-#img_footer{
-  width: 100px;
-  text-align: center;
+
+#geoloc:hover {
+  border : 1px ridge rgba(248,174,21,0.55);
+  box-shadow:8px 8px 10px 0 rgba(123,29,24,0.75);
+  margin-left: -4%;
+  width: 110%;
 }
+
 #div_present{
   background-color: rgba(123,29,24,0.75);
   padding-top: 5vh; 
   padding-bottom: 5vh; 
   display: inline-flex; 
   width: 100%;
+  height: 500px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
+.div1 {
+  height: 200vh;
+}
+
+.container1 {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+  
+  /* safari hack */
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+}
+
+.container_solid {
+  background: white;
+  
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(./images/placeholder.jpg);
+  background-size: 100vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+}
+
+.container_image {
+  /* Grab a free image from unsplash */
+  background-image: url(./images/placeholder.jpg);
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: white;
+}
+
+section {
+  min-height: 50vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 900px;
+}
+
+section h2 {
+  font-family: 'Fraunces', serif;
+}
+
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 
@@ -184,16 +383,14 @@ div#last-results{
 	font-size: 36px;
 	height: auto;
 	font-weight: 800;
-	margin-left: 5em;
+	
 }
+
 
 #footer2{
 	background-color: rgba(248,174,21,0.40);
 }
 
-footer p{
-	margin: auto;
-}
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -254,7 +451,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: rgba(123,29,24,0.65);
   text-align: left;
   background-color: #fff;
 }
@@ -280,11 +477,11 @@ footer p{
 	width: 100%;
 	background-color: rgba(123,29,24,0.65);
 	margin-bottom: 0.1%;
-	height: 3%;
+	height: 2%;
 }
 
 #footer1 img{
-	margin: auto 0 auto 3%;
+	margin: auto 0 auto 15%;
 }
 
 #footer1 .navbar-nav{
@@ -293,7 +490,7 @@ footer p{
 	width: 100%;
 	height: auto;
 	margin-left: -15%;
-	padding: 6% 0px;
+	padding: 1% ;
 }
 
 #footer1 .navbar-nav a{
@@ -4645,7 +4842,7 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 35%;
   margin-bottom: 0;
   list-style: none;
 }
